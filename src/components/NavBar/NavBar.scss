@@ -1,0 +1,27 @@
+header {
+    display: flex;
+    background-color: coral;
+    padding: 10px;
+    justify-content: space-evenly;
+
+    p {
+        color: white;
+    }
+
+    nav {
+
+        ul {
+            display: flex;
+
+            li {
+                list-style: none;
+
+                a {
+                    padding: 10px;
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
