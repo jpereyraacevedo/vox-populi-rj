@@ -6,7 +6,7 @@ function App() {
   return  (
     <body>
       <NavBar/>
-      <ItemListContainer greeting="Mensaje enviado desde el greeting"/>
+      <ItemListContainer greeting="dsfsaafO"/>
     </body>
   )
 }
