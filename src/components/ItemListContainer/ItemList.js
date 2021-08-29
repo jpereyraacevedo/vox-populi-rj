@@ -1,6 +1,7 @@
 import React from 'react'
 import { Card } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import './ItemList.scss'
 
 
 export const ItemList = ( { productos } ) => {
@@ -16,7 +17,7 @@ export const ItemList = ( { productos } ) => {
                                 <Card.Title> { prod.nombre } </Card.Title>
                                 <Card.Text>
                                     { prod.descripcion }
-                                    <p> Precio: ${ prod.precio } </p>
+                                    <p>Precio: ${ prod.precio } </p>
                                 </Card.Text>
                             </Card.Body>
                         </Card>

@@ -10,11 +10,13 @@ function App() {
     <>
       <BrowserRouter>
         <NavBar/>
-        <ItemListContainer/>
 
         <Switch>
           <Route exact path="/">
-
+            <ItemListContainer/>
+          </Route>
+          <Route exact path="/category/:cat">
+            <ItemListContainer/>
           </Route>
         </Switch>
       </BrowserRouter>

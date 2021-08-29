@@ -1,5 +1,6 @@
 import React from 'react'
 import { CartWidget } from '../CartWidget/CartWidget'
+import { Link } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './NavBar.scss'
 
@@ -8,25 +9,12 @@ import './NavBar.scss'
 export const NavBar = () => {
     return (
     <header className="container">
-        <p> LOGO </p>
+        <Link to= { "/" }>LOGO</Link>
         <nav>
-            <ul>
-                <li>
-                    <a href="#">Enlace 1</a>
-                </li>
-                <li>
-                    <a href="#">Enlace 2</a>
-                </li>
-                <li>
-                    <a href="#">Enlace 3</a>
-                </li>
-                <li>
-                    <a href="#">Enlace 4</a>
-                </li>
-                <li>
-                    <a href="#">Enlace 5</a>
-                </li>
-            </ul>
+            <Link to={ "/" }>Ir al inicio</Link>
+            <Link to={ "/category/anime" }>Anime</Link>
+            <Link to={ "/category/peliculas" }>Peliculas</Link>
+            <Link to={ "/category/pop" }>Cultura pop</Link>
         </nav>
         <CartWidget/>
     </header>

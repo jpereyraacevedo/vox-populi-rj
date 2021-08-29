@@ -5,6 +5,7 @@
 export const stock = [
     {
         id: 1,
+        category: 'anime',
         nombre: 'Remera de Tanjiro',
         precio: 850,
         descripcion: 'Remera del popular anime kimetsu no yaiba',
@@ -13,6 +14,7 @@ export const stock = [
 
     {
         id: 2,
+        category: 'anime',
         nombre: 'Remera de Zenitsu',
         precio: 850,
         descripcion: 'Remera del popular anime kimetsu no yaiba',
@@ -21,6 +23,7 @@ export const stock = [
 
     {
         id: 3,
+        category: 'pop',
         nombre: 'Remera de T-Rex',
         precio: 850,
         descripcion: 'Epico diseño de Jurassic Park',
@@ -29,6 +32,7 @@ export const stock = [
 
     {
         id: 4,
+        category: 'peliculas',
         nombre: 'Remera de Marty McFly',
         precio: 850,
         descripcion: 'Volve al pasado con Marty!',
@@ -37,6 +41,7 @@ export const stock = [
 
     {
         id: 5,
+        category: 'peliculas',
         nombre: 'Remera de Gollum',
         precio: 850,
         descripcion: 'Sss sss SMEAGOL',
@@ -45,6 +50,7 @@ export const stock = [
 
     {
         id: 6,
+        category: 'anime',
         nombre: 'Remera de Eva-01',
         precio: 850,
         descripcion: 'Ponte la remera Shinji!',

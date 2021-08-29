@@ -1,27 +1,21 @@
 header {
     display: flex;
-    background-color: coral;
+    background-color: #00001a;
     padding: 10px;
     justify-content: space-evenly;
 
     p {
-        color: white;
+        color: #8a87a9;
     }
 
     nav {
 
-        ul {
-            display: flex;
+        display: flex;
 
-            li {
-                list-style: none;
-
-                a {
-                    padding: 10px;
-                    color: white;
-                    text-decoration: none;
-                }
-            }
+        a {
+            padding: 0 10px;
+            color: #8a87a9;
+            text-decoration: none;
         }
     }
 }
