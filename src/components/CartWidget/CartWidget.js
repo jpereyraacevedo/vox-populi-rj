@@ -4,7 +4,7 @@ import './CartWidget.scss'
 export const CartWidget = () => {
 
     return (
-        <p>carrito</p>
+        <p>Carrito</p>
     )
 
 }

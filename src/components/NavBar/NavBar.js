@@ -1,12 +1,14 @@
 import React from 'react'
 import { CartWidget } from '../CartWidget/CartWidget'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './NavBar.scss'
+
 
 
 export const NavBar = () => {
     return (
-    <header>
-        <p> IMG LOGO </p>
+    <header className="container">
+        <p> LOGO </p>
         <nav>
             <ul>
                 <li>
