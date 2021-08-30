@@ -1,7 +1,22 @@
 section {
+
+
     div {
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        background-color: #0c0c22; 
+        color: #aaa6ca;
+
+        .btn {
+            background-color: #32314e;
+            color: #aaa6ca
+        }
+
+        p {
+            background-color: #13142a;
+            text-align: center;
+        }
     }
 }

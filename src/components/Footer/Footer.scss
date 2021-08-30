@@ -1,26 +1,18 @@
-header {
+footer {
     display: flex;
-    background-color: #00001a;
+    background-color: #4e4c6e;
+    margin-top: 30px;
     padding: 10px;
     justify-content: space-evenly;
 
     p {
         color: #8a87a9;
     }
-
-    .contenedor {
-        max-width: 450px;
-        max-height: 700px;
-        }
-
-    nav {
-
-        display: flex;
-
         a {
             padding: 0 10px;
+            background-color: #4e4c6e;
             color: #8a87a9;
             text-decoration: none;
         }
-    }
+    
 }

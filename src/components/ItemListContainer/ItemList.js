@@ -1,5 +1,6 @@
 import React from 'react'
 import { Card } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './ItemList.scss'
 
@@ -17,7 +18,8 @@ export const ItemList = ( { productos } ) => {
                                 <Card.Title> { prod.nombre } </Card.Title>
                                 <Card.Text>
                                     { prod.descripcion }
-                                    <p>Precio: ${ prod.precio } </p>
+                                    <p> Precio: ${ prod.precio } </p>
+                                    <Link className='btn' to={`/detail/${prod.id}`}> Ver detalles del producto </Link>
                                 </Card.Text>
                             </Card.Body>
                         </Card>
@@ -29,21 +31,3 @@ export const ItemList = ( { productos } ) => {
 
 }
 
-{/* <Card style={{ width: '18rem' }}>
-  <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
-  <Card.Body>
-    <Card.Title> { prod.nombre } </Card.Title>
-    <Card.Text>
-    { prod.descripcion }
-    <p> Precio: ${ prod.precio } </p>
-    </Card.Text>
-  </Card.Body>
-</Card> */}
-
-
-                    // <div key={ prod.id }>
-                    //     <img src={ prod.img } alt={ prod.nombre }/>
-                    //     <h2> { prod.nombre } </h2>
-                    //     <p> { prod.descripcion } </p>
-                    //     <p> Precio: ${ prod.precio } </p>
-                    // </div>

@@ -26,7 +26,7 @@ export const stock = [
         category: 'pop',
         nombre: 'Remera de T-Rex',
         precio: 850,
-        descripcion: 'Epico diseño de Jurassic Park',
+        descripcion: 'Diseño del mitico T-Rex de Jurassic Park',
         img: 'https://scontent.fros2-2.fna.fbcdn.net/v/t1.6435-9/196370464_2233183830156889_1425123499925084629_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=_r-PCyCjWZMAX_GdjI5&_nc_ht=scontent.fros2-2.fna&oh=b6f1fc650198ccafa9a6008cd19f3536&oe=61476D97',
     },
 
