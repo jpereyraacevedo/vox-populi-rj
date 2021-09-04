@@ -1,8 +1,10 @@
 header {
     display: flex;
-    background-color: #00001a;
+    background-color: #4e4c6e;
     padding: 10px;
     justify-content: space-evenly;
+    margin-bottom: 30px;
+    align-items: center;
 
     p {
         color: #8a87a9;
@@ -21,6 +23,7 @@ header {
             padding: 0 10px;
             color: #8a87a9;
             text-decoration: none;
+            background-color: #4e4c6e;
         }
     }
 }
