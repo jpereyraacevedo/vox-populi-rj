@@ -1,14 +1,27 @@
 import React from 'react'
+import { useState } from 'react'
+import { useContext } from 'react'
 import { Container, Row, Col, Image, Form } from 'react-bootstrap'
 import './ItemDetail.scss'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { QuantityCounter } from '../QuantityCounter/QuantityCounter.js'
+import { CartContext } from '../../context/CartContext'
 
 
 
+export const ItemDetail = ({category, descripcion, id, img, nombre, precio, stock}) => {
 
-export const ItemDetail = ({category, descripcion, id, img, nombre, precio}) => {
+    const {agregarAlCarrito, isInCart} = useContext(CartContext)
+// Datos del contexto
 
+    const [cantidad, setCantidad] = useState (1)
 
+    const agregarCarrito = () => {
+        agregarAlCarrito ({
+            category, descripcion, id, nombre, precio, cantidad
+        })
+    }
+// Funcion que maneja el agregado de productos que comunica con el QuantityCounter
     return (
         <>
         
@@ -42,6 +55,7 @@ export const ItemDetail = ({category, descripcion, id, img, nombre, precio}) => 
                         </div>
                     </Col>
                 </Row>
+                <QuantityCounter stock= {stock} cantidad= {cantidad} setCantidad= {setCantidad} agregarCarrito= {agregarCarrito} agregadoCarrito= {isInCart()} />
             </Container>
 
         </>
