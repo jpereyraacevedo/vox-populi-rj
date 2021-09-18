@@ -6,7 +6,6 @@ import { useState } from 'react'
 export const CartContext = createContext()
 
 
-
 export const CartProvider = ({children}) => {
 
     const [cart, setCart] = useState ([])
@@ -38,7 +37,7 @@ export const CartProvider = ({children}) => {
 // Funcion para no duplicar elementos del carrito
 
     return (
-        <CartContext.Provider value= {{cart, agregarAlCarrito, eliminarElementoDelCarrito, cantidadElementosDelCarrito, vaciarCarrito, isInCart}} >
+        <CartContext.Provider value= {{cart, agregarAlCarrito, eliminarElementoDelCarrito, cantidadElementosDelCarrito, vaciarCarrito, isInCart}}>
             {children}
         </CartContext.Provider>
     )

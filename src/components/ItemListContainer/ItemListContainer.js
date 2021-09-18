@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Spinner } from 'react-bootstrap'
 import { useParams } from 'react-router-dom'
-import { funcionObtenerDatos } from '../../utilities/funcionObtenerDatos'
+// import { funcionObtenerDatos } from '../../utilities/funcionObtenerDatos'
 import { ItemList } from './ItemList'
 import './ItemListContainer.scss'
 import { getFirestore } from '../../firebase/firebase'

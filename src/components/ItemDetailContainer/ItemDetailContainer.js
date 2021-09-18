@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Spinner } from 'react-bootstrap'
 import { useParams } from 'react-router-dom'
 import { ItemDetail } from './ItemDetail'
-import { funcionObtenerDatos } from '../../utilities/funcionObtenerDatos'
+// import { funcionObtenerDatos } from '../../utilities/funcionObtenerDatos'
 import { getFirestore } from '../../firebase/firebase'
 
 export const ItemDetailContainer = () => {

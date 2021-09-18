@@ -1,12 +1,11 @@
 import React from 'react'
 import { useState } from 'react'
 import { useContext } from 'react'
-import { Container, Row, Col, Image, Form } from 'react-bootstrap'
-import './ItemDetail.scss'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import { Container, Row, Col, Image } from 'react-bootstrap'
 import { QuantityCounter } from '../QuantityCounter/QuantityCounter.js'
 import { CartContext } from '../../context/CartContext'
-
+import './ItemDetail.scss'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 export const ItemDetail = ({category, descripcion, id, img, nombre, precio, stock}) => {
@@ -43,7 +42,7 @@ export const ItemDetail = ({category, descripcion, id, img, nombre, precio, stoc
                             <p>
                                 Precio: ${precio}
                             </p>
-                            <div  className='ancho'>
+                            {/* <div  className='ancho'>
                                 <Form.Select aria-label="Default select example">
                                     <option>Selecciona tu talle:</option>
                                     <option value="1">S</option>
@@ -51,11 +50,11 @@ export const ItemDetail = ({category, descripcion, id, img, nombre, precio, stoc
                                     <option value="4">L</option>
                                     <option value="5">XL</option>
                                 </Form.Select>
-                            </div>
+                            </div> */}
                         </div>
                     </Col>
                 </Row>
-                <QuantityCounter stock= {stock} cantidad= {cantidad} setCantidad= {setCantidad} agregarCarrito= {agregarCarrito} agregadoCarrito= {isInCart()} />
+                <QuantityCounter stock= {stock} cantidad= {cantidad} setCantidad= {setCantidad} agregarCarrito= {agregarCarrito} agregadoCarrito= {isInCart(id)} />
             </Container>
 
         </>
