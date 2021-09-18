@@ -1,13 +1,17 @@
 import React from 'react'
+import { useContext } from 'react'
 import { CartContext } from '../../context/CartContext'
 import { getFirestore } from '../../firebase/firebase'
+import firebase from 'firebase/app'
+import 'firebase/firestore'
+
 
 
 
 export const Checkout = () => {
 
     // Informacion utilizada del cart del contexto
-    const { cart } = useContext(CartContext)
+    const { cart, precioTotal } = useContext(CartContext)
 
 
     // Informacion traida del firebase
@@ -22,6 +26,19 @@ export const Checkout = () => {
         telefono: 3424281330,
         correo: 'jpereyraacevedo@gmail.com'
     }
+
+    // Crear nuevas ordenes
+
+    const nuevaOrden = {
+        comprador: comprador,
+        items: cart,
+        total: precioTotal(),
+        fecha: firebase.firestore.Timestamp.fromDate(new Date())
+    }
+
+    ordenes.add(nuevaOrden)
+    .then((res) => console.log(res))
+
 
     return (
         <>

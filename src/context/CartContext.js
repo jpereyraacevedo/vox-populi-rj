@@ -25,19 +25,28 @@ export const CartProvider = ({children}) => {
         return cart.reduce((suma, producto) => suma + producto.cantidad, 0)
     }
 
+
+// Funcion para vaciar carrito, por eso va el array vacio
     const vaciarCarrito = () => {
         setCart([])
     }
-// Funcion para vaciar carrito, por eso va el array vacio
 
+
+// Funcion para no duplicar elementos del carrito
     const isInCart = (id) => {
 
         return cart.some(el => el.id == id)
     }
-// Funcion para no duplicar elementos del carrito
+
+
+// Funcion para calcular el precio total
+    const precioTotal = () => {
+        return cart.reduce((acc, prod) => acc + prod.precio * prod.cantidad, 0)
+    }
+
 
     return (
-        <CartContext.Provider value= {{cart, agregarAlCarrito, eliminarElementoDelCarrito, cantidadElementosDelCarrito, vaciarCarrito, isInCart}}>
+        <CartContext.Provider value= {{cart, agregarAlCarrito, eliminarElementoDelCarrito, cantidadElementosDelCarrito, vaciarCarrito, isInCart, precioTotal}}>
             {children}
         </CartContext.Provider>
     )
