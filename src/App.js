@@ -7,6 +7,7 @@ import { Footer } from './components/Footer/Footer';
 import { CartProvider } from './context/CartContext';
 import { CartView } from './components/CartView/CartView';
 import './styles/styles.css';
+import { Checkout } from './components/Checkout/Checkout';
 
 
 function App() {
@@ -31,6 +32,9 @@ function App() {
             </Route>
             <Route exact path='/cart'>
               <CartView/>
+            </Route>
+            <Route exact path='/checkout'>
+              <Checkout/>
             </Route>
           </Switch>
           

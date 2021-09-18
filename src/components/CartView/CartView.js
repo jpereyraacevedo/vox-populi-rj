@@ -12,20 +12,20 @@ export const CartView = () => {
     return (
         <>  
                 {(cantidadElementosDelCarrito() !== 0)
-                ? <div>       
+                ?   <div className="container">       
                         {cart.map(producto => (
                             <div key={producto.id}>
                                 <h3> {producto.nombre} </h3>
                                 <h4> Unidades: {producto.cantidad}</h4>
                                 <h5> Precio ${producto.precio * producto.cantidad}</h5>
-                                <FaTrashAlt onClick= {() => eliminarElementoDelCarrito(producto.id)}/>
+                                <FaTrashAlt className="my-2" onClick= {() => eliminarElementoDelCarrito(producto.id)}/>
+                                <Link to={ '/checkout' }><button className="btn btn-success">Finalizar la compra</button></Link>
                             </div>
                         ))}
                         <hr/>
-                        <button className="btn btn-danger" onClick= {vaciarCarrito}>VACIAR</button>
+                        <button className="btn btn-danger" onClick= {vaciarCarrito}>Eliminar todos los productos del carrito</button>
                     </div>
-                :
-                <div> <p> No tenes items </p> <Link to={ '/' }> Volver a home </Link></div>
+                :<div> <p> No tenes elementos en tu carrito </p> <Link to={ '/' }> Volver a home </Link></div>
             }   
         </>
     )

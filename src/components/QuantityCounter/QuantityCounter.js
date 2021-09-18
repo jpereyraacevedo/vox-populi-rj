@@ -35,7 +35,6 @@ export const QuantityCounter = ({ stock, cantidad, setCantidad, agregarCarrito, 
                     <Button variant="outline-success" onClick={agregarCarrito} >Add to cart</Button>{' '}
                 </div>
             }
-            
         </div>
         </>
     )

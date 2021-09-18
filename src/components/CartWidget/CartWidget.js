@@ -20,6 +20,8 @@ export const CartWidget = () => {
     //     </>
     // )
 
+
+    // Si no hay elementos en el carrito entonces, el CartWidget no se mostrara
     return (
         <>  
                 {(cantidadElementosDelCarrito() !== 0)
@@ -28,23 +30,9 @@ export const CartWidget = () => {
                 <span>{cantidadElementosDelCarrito()}</span>
                 </Link></div>
                 :
-                <p><FiShoppingCart className="test" display="none"/></p>
+                <p><FiShoppingCart className="test"/></p>
             }   
         </>
     )
 
 }
-
-
-// return (
-//     <>  
-//             {(cantidadElementosDelCarrito() !== 0)
-//             ? <p><FiShoppingCart className="test" display="none"/></p>
-//             :
-//             <div> <Link to="/cart">
-//             <p><FiShoppingCart className="test"/></p>
-//             <span>{cantidadElementosDelCarrito()}</span>
-//             </Link></div>
-//         }   
-//     </>
-// )
