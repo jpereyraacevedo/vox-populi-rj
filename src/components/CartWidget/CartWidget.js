@@ -11,13 +11,40 @@ export const CartWidget = () => {
     const {cantidadElementosDelCarrito} = useContext(CartContext)
 
 
+    // return (
+    //     <>
+    //         <Link to="/cart">
+    //             <p><FiShoppingCart className="test"/></p>
+    //             <span>{cantidadElementosDelCarrito()}</span>
+    //         </Link>
+    //     </>
+    // )
+
     return (
-        <>
-            <Link to="/cart">
+        <>  
+                {(cantidadElementosDelCarrito() !== 0)
+                ? <div> <Link to="/cart">
                 <p><FiShoppingCart className="test"/></p>
                 <span>{cantidadElementosDelCarrito()}</span>
-            </Link>
+                </Link></div>
+                :
+                <p><FiShoppingCart className="test" display="none"/></p>
+            }   
         </>
     )
 
 }
+
+
+// return (
+//     <>  
+//             {(cantidadElementosDelCarrito() !== 0)
+//             ? <p><FiShoppingCart className="test" display="none"/></p>
+//             :
+//             <div> <Link to="/cart">
+//             <p><FiShoppingCart className="test"/></p>
+//             <span>{cantidadElementosDelCarrito()}</span>
+//             </Link></div>
+//         }   
+//     </>
+// )
