@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 export const QuantityCounter = ({ stock, cantidad, setCantidad, agregarCarrito, agregadoCarrito }) => {
 
-    console.log(agregadoCarrito)
+    // console.log(agregadoCarrito)
 
     const agregarUnidad = () => {
         if (cantidad < stock) { 
