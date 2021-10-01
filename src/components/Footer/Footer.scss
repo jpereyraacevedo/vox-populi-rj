@@ -1,18 +1,44 @@
 footer {
     display: flex;
-    background-color: #4e4c6e;
+    flex-direction: column;
+    background-color: #252440 !important;
     margin-top: 30px;
     padding: 10px;
     justify-content: space-evenly;
 
     p {
         color: #8a87a9;
+        text-align: center;
     }
-        a {
-            padding: 0 10px;
-            background-color: #4e4c6e;
+
+    a {
+        padding: 0 25px;
+        color: #8a87a9;
+        text-decoration: none;
+        background-color: #252440; 
+        font-weight: 400;
+        &:hover {
             color: #8a87a9;
-            text-decoration: none;
+            background-color: #2823bc;
+            font-weight: 500;
         }
+    }
     
+    a {
+        padding: 0 10px;
+        background-color: #252440;
+        color: #8a87a9;
+        text-decoration: none;
+    }
+
+    .items {
+        background-color: #252440;
+        flex-direction: row !important;
+        justify-content: space-evenly;
+    }
+    .firma {
+        margin-top: 1rem;
+        font-size: 0.75rem;
+        background-color: #2823bc;
+    }
 }

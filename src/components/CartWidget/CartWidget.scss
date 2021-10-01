@@ -1,10 +1,25 @@
-
-.test  {
-    background-color: #4e4c6e;
-    align-items: center;
+a {
+    text-decoration: none;
+    text-align: center;
 }
 
 p {
-    background-color: #4e4c6e;
+    background-color: #252440;
     margin: 0;
+}
+
+.test  {
+    background-color: #252440;
+    align-items: center;
+}
+
+.bc-color {
+    background-color: #252440;
+}
+
+.bc-color2 {
+    background-color: #2823bc;
+    border-radius: 25%;
+    padding: 0 10px;
+    font-size: 18px;
 }

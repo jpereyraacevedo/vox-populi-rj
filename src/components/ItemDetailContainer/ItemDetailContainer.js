@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { Spinner } from 'react-bootstrap'
 import { useParams } from 'react-router-dom'
 import { ItemDetail } from './ItemDetail'
-// import { funcionObtenerDatos } from '../../utilities/funcionObtenerDatos'
 import { getFirestore } from '../../firebase/firebase'
 
 export const ItemDetailContainer = () => {
@@ -16,14 +15,10 @@ export const ItemDetailContainer = () => {
 
         setLoading(true);
   
-  
-  
         const db = getFirestore();
   
         let producto = db.collection("productos").doc(itemId); // es basicamente igual al de ItemListContainer pero le agregamos el .doc( id del documento ) para traer un documento en particular
-  
-  
-  
+    
         producto
            .get()
            .then((response) => {
@@ -40,36 +35,11 @@ export const ItemDetailContainer = () => {
   
      }, [itemId]);
 
-
-    // Funcion previa correccion Gabriel
-    // useEffect(() => {
-
-    //     setLoading (true)
-
-    //     const db = getFirestore()
-    //     const productos = db.collection('productos')
-    //     const items = productos.doc(itemId)
-    //     items.get().then((documento) => {
-    //         setItem({...documento.data(), id: documento.id})
-    //     }).finally(()=> {
-    //         setLoading(false)})
-
-
-    //     // funcionObtenerDatos()
-    //     //     .then (res => {
-    //     //         setItem( res.find (prod => prod.id === parseInt(itemId)))
-    //     //     })
-    //         // .finally(()=> {
-    //         //     setLoading(false)
-    //         // })
-    // }, [itemId])
-
     return(
         <>
             {loading 
             ? <div>
-                <Spinner animation="border" role="status">
-                    <span className="visually-hidden">Loading...</span>
+                <Spinner animation="border spinner container" role="status">
                 </Spinner>
               </div> 
             : <ItemDetail {...item} />}

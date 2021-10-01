@@ -1,0 +1,66 @@
+.cartView {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: solid 2px #252440 !important;
+
+    h3 {
+        max-width: 12rem;
+    }
+
+    .borrar{
+        background-color: #FF002A !important;
+    }
+
+    .miniatura {
+        max-width: 90px;
+        max-height: 90px;
+        border-radius: 5%;
+        &:hover {
+            transform:scale(1.1);
+        }
+    }
+
+    .trash {
+        font-size: 16px;
+        color: #252440 !important;
+        background-color: #FF002A;
+        &:hover {
+            transform:scale(1.2);
+            font-weight: 500;
+        }
+    }
+}
+
+.botonesCart {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .eliminar{
+        background-color: #FF002A !important;
+        width: 12rem;
+        &:hover {
+            font-weight: 500;
+        }
+    }
+
+    .finalizar {
+        background-color: #1C9405 !important;
+        width: 12rem;
+        &:hover {
+            font-weight: 500;
+        }
+    }
+}
+
+.carritoVacio {
+    text-align: center;
+}
+
+.carritoTitulo {
+    text-align: center;
+}

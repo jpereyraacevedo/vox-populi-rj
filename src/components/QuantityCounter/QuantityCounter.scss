@@ -1,0 +1,44 @@
+.botones {
+    display: flex;
+    flex-direction: row;
+
+    h2 {
+        padding-right: 5px;
+        margin-right: 10px;
+    }
+
+    .unidades {
+        color: #8a87a9;
+        width: 35px;
+        border-color: #2823bc;
+        &:hover {
+            background-color: #8a87a9 !important;
+            color: #2823bc;
+            font-weight: 500;
+        }
+    }
+}
+
+.agregar {
+    max-width: 10rem !important;
+    background-color: #1C9405 !important;
+    border: 2px;
+    border-color: #061A03 !important;
+    color: #1A1394;
+    font-weight: 500;
+    &:hover {
+        color: #1A1394;
+        transform:scale(1.1);
+    }
+}
+
+.agregadoCarrito {
+    align-items: center;
+    max-width: 18rem;
+    background-color: #3A3AF0 !important;
+    color: #F2C80A !important;
+    &:hover {
+        color: #1A1394;
+        font-weight: 500;
+    }
+}

@@ -21,6 +21,8 @@ export const CartProvider = ({children}) => {
         setCart(cart.filter(producto => producto.id !== id) )
     }
 
+
+// Funcion para la cantidad de elementos del carrito, tanto para sumar como para restar
     const cantidadElementosDelCarrito = () => {
         return cart.reduce((suma, producto) => suma + producto.cantidad, 0)
     }
@@ -34,7 +36,6 @@ export const CartProvider = ({children}) => {
 
 // Funcion para no duplicar elementos del carrito
     const isInCart = (id) => {
-
         return cart.some(el => el.id == id)
     }
 

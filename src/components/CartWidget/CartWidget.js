@@ -10,24 +10,13 @@ export const CartWidget = () => {
 
     const {cantidadElementosDelCarrito} = useContext(CartContext)
 
-
-    // return (
-    //     <>
-    //         <Link to="/cart">
-    //             <p><FiShoppingCart className="test"/></p>
-    //             <span>{cantidadElementosDelCarrito()}</span>
-    //         </Link>
-    //     </>
-    // )
-
-
     // Si no hay elementos en el carrito entonces, el CartWidget no se mostrara
     return (
         <>  
                 {(cantidadElementosDelCarrito() !== 0)
-                ? <div> <Link to="/cart">
+                ? <div> <Link className="bc-color" id="nolink" to="/cart">
                 <p><FiShoppingCart className="test"/></p>
-                <span>{cantidadElementosDelCarrito()}</span>
+                <span className="bc-color2">{cantidadElementosDelCarrito()}</span>
                 </Link></div>
                 :
                 <p><FiShoppingCart className="test"/></p>

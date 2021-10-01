@@ -8,6 +8,7 @@ import { CartProvider } from './context/CartContext';
 import { CartView } from './components/CartView/CartView';
 import './styles/styles.css';
 import { Checkout } from './components/Checkout/Checkout';
+import {  Title } from './components/Title/Title';
 
 
 function App() {
@@ -19,9 +20,10 @@ function App() {
 
         <BrowserRouter>
           <NavBar/>
-
+  
           <Switch>
             <Route exact path="/">
+            <Title/>
               <ItemListContainer/>
             </Route>
             <Route exact path="/category/:cat">

@@ -2,3 +2,25 @@ h5 {
     padding: 0 5px;
     background-color: #13142a;
 }
+
+.border-color {
+    background-color: #2f2c79;
+}
+
+.btn {
+    background-color: #302c9b !important;
+}
+
+.detalles {
+    &:hover {
+        font-weight: 500;
+        color: #F2C80A !important;
+    }
+}
+
+.color-fondo {
+    background-color: #252440;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}

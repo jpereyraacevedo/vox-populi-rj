@@ -9,7 +9,7 @@ import './NavBar.scss'
 export const NavBar = () => {
     return (
     <header className="container">
-        <Link to= { "/" }><img className='contenedor' src='https://via.placeholder.com/50' alt='logo'/> 
+        <Link to= { "/" }><img className='contenedor' src='https://i.ibb.co/KWGXBd8/ede7ffb0-098f-4412-bafc-bf966c9e04c7.jpg' alt='logo'/> 
         </Link>
         <nav>
             <Link to={ "/" }>Ir al inicio</Link>

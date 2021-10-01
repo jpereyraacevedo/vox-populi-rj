@@ -8,14 +8,14 @@ export const Item = ( {img, nombre, descripcion, precio, id} ) => {
 
     return (
         <div>
-            <Card className="my-1" style={{ width: '18rem' }}>
+            <Card className="my-1 border-color" style={{ width: '18rem' }}>
                 <Card.Img variant="top" src={ img } alt={ nombre } />
                 <Card.Body>
                     <Card.Title> { nombre } </Card.Title>
-                    <Card.Text>
-                        { descripcion }
+                    <Card.Text className="color-fondo">
+                        <p> { descripcion } </p>
                         <span> Precio: ${ precio } </span>
-                        <Link className='btn' to={`/detail/${id}`}> Ver detalles del producto </Link>
+                        <Link className='btn my-2 detalles' to={`/detail/${id}`}> Ver detalles del producto </Link>
                     </Card.Text>
                 </Card.Body>
             </Card>

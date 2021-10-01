@@ -17,44 +17,39 @@ export const ItemDetail = ({category, descripcion, id, img, nombre, precio, stoc
 
     const agregarCarrito = () => {
         agregarAlCarrito ({
-            category, descripcion, id, nombre, precio, cantidad
+            category, descripcion, id, nombre, precio, cantidad, img
         })
     }
 // Funcion que maneja el agregado de productos que comunica con el QuantityCounter
     return (
         <>
         
-            <Container>
+            <Container  className="prueba">
                 <Row>
-                    <Col className='prueba'>
-                        <div>
+                    <Col>
+                        <div className="contenedor">
                             <Image src={img} alt={nombre} fluid />
                         </div>
                     </Col>
-                    <Col className='prueba'>
-                        <div>
+                    </Row>
+                    <Col>
+                        <div className="my-5 mx-5">
                             <h2>
                                 {nombre}
-                            </h2>                                
+                            </h2>  
+                            <hr></hr>                              
                             <h4>
                                 {descripcion}
                             </h4>
-                            <p>
+                            <span>
+                            Stock: {stock} unidades
+                            </span>
+                            <span>
                                 Precio: ${precio}
-                            </p>
-                            {/* <div  className='ancho'>
-                                <Form.Select aria-label="Default select example">
-                                    <option>Selecciona tu talle:</option>
-                                    <option value="1">S</option>
-                                    <option value="2">M</option>
-                                    <option value="4">L</option>
-                                    <option value="5">XL</option>
-                                </Form.Select>
-                            </div> */}
+                            </span>
                         </div>
+                        <QuantityCounter stock= {stock} cantidad= {cantidad} setCantidad= {setCantidad} agregarCarrito= {agregarCarrito} agregadoCarrito= {isInCart(id)} />
                     </Col>
-                </Row>
-                <QuantityCounter stock= {stock} cantidad= {cantidad} setCantidad= {setCantidad} agregarCarrito= {agregarCarrito} agregadoCarrito= {isInCart(id)} />
             </Container>
 
         </>
