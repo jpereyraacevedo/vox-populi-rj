@@ -28,3 +28,5 @@ Funcionamiento hasta el momento:
 
 npm start
 
+Gif para visualizar el sitio:
+https://i.ibb.co/rkVs4L4/Vox-Populi.gif

@@ -23,7 +23,7 @@ export const ItemDetailContainer = () => {
            .get()
            .then((response) => {
               setItem({...response.data(),    // aca en vez de hacer el map le pasamos directamente el objeto que trajimos  
-                 id: response.id,          // podrias tener logica para que si ingresan un id por url de algo que no existe en firebase muestrea algun error o redirijas a la home
+                 id: response.id,          
               });
            })
            .catch((err) => console.log(err))

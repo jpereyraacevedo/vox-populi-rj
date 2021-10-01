@@ -1,4 +1,7 @@
 
+// Este fue el stock original, queda como recuerdo del primer paso
+
+
 export const stock = [
     {
         id: 1,

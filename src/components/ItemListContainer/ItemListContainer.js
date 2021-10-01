@@ -34,7 +34,7 @@ export const ItemListContainer = () => {
 
 
 
-        productos.get().then((response) => {  // esto es tal cual lo tenias. le pase el catch y finally solamente
+        productos.get().then((response) => {  
 
             const data = response.docs.map((documento) => ({...documento.data(), id: documento.id}))
 
