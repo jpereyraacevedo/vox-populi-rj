@@ -36,7 +36,7 @@ export const CartProvider = ({children}) => {
 
 // Funcion para no duplicar elementos del carrito
     const isInCart = (id) => {
-        return cart.some(el => el.id == id)
+        return cart.some(el => el.id === id)
     }
 
 
