@@ -9,7 +9,7 @@ import './CartView.scss'
 
 export const CartView = () => {
     
-    const {cart, eliminarElementoDelCarrito, vaciarCarrito, cantidadElementosDelCarrito} = useContext(CartContext)
+    const {cart, eliminarElementoDelCarrito, vaciarCarrito, cantidadElementosDelCarrito, precioTotal} = useContext(CartContext)
 
     return (
         <>  
@@ -29,9 +29,12 @@ export const CartView = () => {
                                 </button>
                             </div>
                         ))}
-                        <div className="botonesCart">
-                            <button className="btn eliminar" onClick= {vaciarCarrito}>Vaciar carrito</button>
-                            <Link className="my-5 mx-5" to={ '/checkout' }><button className="btn finalizar">Finalizar la compra</button></Link>
+                        <div>
+                            <span className="total"> Precio total: ${ precioTotal() } </span>
+                            <div className="botonesCart">
+                                <button className="btn eliminar" onClick= {vaciarCarrito}>Vaciar carrito</button>
+                                <Link className="my-5 mx-5" to={ '/checkout' }><button className="btn finalizar">Finalizar la compra</button></Link>
+                            </div>
                         </div>
                     </div>
                 :<div className="container"> 
