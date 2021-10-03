@@ -70,7 +70,7 @@ export const Checkout = () => {
                     </div>
                 : <div>
                     <div className="alinearFormulario">
-                        <h6 my-2> Formulario de contacto</h6>
+                        <h6> Formulario de contacto</h6>
                         <form  className="formulario" onSubmit={ enviarSubmit }>
                             <input
                             type='text'
