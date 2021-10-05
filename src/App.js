@@ -6,9 +6,9 @@ import { NavBar } from './components/NavBar/NavBar';
 import { Footer } from './components/Footer/Footer';
 import { CartProvider } from './context/CartContext';
 import { CartView } from './components/CartView/CartView';
-import './styles/styles.css';
 import { Checkout } from './components/Checkout/Checkout';
-import {  Title } from './components/Title/Title';
+import { Title } from './components/Title/Title';
+import './styles/styles.css';
 
 
 function App() {
